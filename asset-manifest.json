@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Prem237/Shoesshop.git/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/Prem237/Shoesshop.git/static/js/main.70cec230.chunk.js",
+    "main.js.map": "/Prem237/Shoesshop.git/static/js/main.70cec230.chunk.js.map",
+    "runtime-main.js": "/Prem237/Shoesshop.git/static/js/runtime-main.aa74a7be.js",
+    "runtime-main.js.map": "/Prem237/Shoesshop.git/static/js/runtime-main.aa74a7be.js.map",
+    "static/js/2.f26ffb65.chunk.js": "/Prem237/Shoesshop.git/static/js/2.f26ffb65.chunk.js",
+    "static/js/2.f26ffb65.chunk.js.map": "/Prem237/Shoesshop.git/static/js/2.f26ffb65.chunk.js.map",
+    "static/js/3.a5a1b64d.chunk.js": "/Prem237/Shoesshop.git/static/js/3.a5a1b64d.chunk.js",
+    "static/js/3.a5a1b64d.chunk.js.map": "/Prem237/Shoesshop.git/static/js/3.a5a1b64d.chunk.js.map",
+    "index.html": "/Prem237/Shoesshop.git/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/Prem237/Shoesshop.git/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.f26ffb65.chunk.js.LICENSE.txt": "/Prem237/Shoesshop.git/static/js/2.f26ffb65.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Prem237/Shoesshop.git/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa74a7be.js",
+    "static/js/2.f26ffb65.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.70cec230.chunk.js"
+  ]
+}
