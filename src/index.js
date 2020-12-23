@@ -4,11 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+var temp = <h1>WELCOME!!!</h1>
+ReactDOM.render(
+  temp,
+  document.getElementById('root')
+);
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('king')
 );
 
 // If you want to start measuring performance in your app, pass a function

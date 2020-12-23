@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+    const [Toggle,ABCD] = useState(true);
+
+    const toggleHandler = () => {
+      const presentState = Toggle;
+      ABCD(!presentState);
+    }
+    let displayContent = "Open";
+    if (Toggle) {
+      displayContent = "Closed";
+    }
+ 
+    return (
+
+    <div>
+      <button onClick={toggleHandler}>Toggle</button>
+      <div className="content">
+        {displayContent}
+      </div>
     </div>
   );
-}
+    }
+
+
 
 export default App;
