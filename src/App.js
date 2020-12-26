@@ -7,13 +7,28 @@ class College
   }
   getCollege()
   {
-    return "MY department is"+this.depart;
+    return "MY department is:"+this.depart;
   }
+}
+class CollegeName extends College 
+{
+constructor(name,depart)
+{
+super(depart);
+this.name=name;
+}
+banner()
+{
+  let print=super.getCollege();
+  print+=" My college name is:"+this.name;
+  return print;
+}
+
 }
 
 function App() {
-    const Clg =new College("ECE");
-  
+
+    const clgname= new CollegeName("MEC","ECE");
     const [Toggle,ABCD] = useState(true);
 
     const toggleHandler = () => {
@@ -32,7 +47,7 @@ function App() {
       <div className="content">
         {displayContent}
       </div>
-      {  Clg.getCollege()}
+      {  clgname.banner()}
     </div>
   );
     }
