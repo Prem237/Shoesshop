@@ -4,11 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-var temp = <h1>WELCOME!!!</h1>
-ReactDOM.render(
-  temp,
-  document.getElementById('root')
+class Header extends React.Component
+{
+  render()
+  {
+    return(
+    <div>
+      See the details
+    </div>
+    );
+  }
+}
+const code=(
+  <div>
+   <h1>Welcome To All!!!!!!!!!</h1>
+    <Header />
+  </div>
 );
+ReactDOM.render(code,document.getElementById('root'));
 ReactDOM.render(
   <React.StrictMode>
     <App />
