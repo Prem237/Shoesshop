@@ -37,7 +37,7 @@ function App() {
     }
     let displayContent = "Open";
     if (Toggle) {
-      displayContent = "Closed";
+      displayContent = "";
     }
  
     return (

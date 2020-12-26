@@ -77,3 +77,4 @@ React Components
     Nested Components
     Props
     Events
+    indecision

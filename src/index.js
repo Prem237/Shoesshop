@@ -46,15 +46,43 @@ class Neww extends React.Component
     <div>
       <form onSubmit={this.page}>
         <input type="text" name="click" ></input>
-        <button>add option</button> 
+        <button>add Alert</button> 
       </form>
     </div>
     );
   }
 }
 
-
+class Increment extends React.Component
+{
+  constructor(props)
+  {
+    super(props);
+    this.increase=this.increase.bind(this);
+    this.state={
+      count: 0
+    };
+  }
+  increase()
+  {
+    this.setState((prevstate)=>{
+      return{
+        count:prevstate.count +1
+      };
+    });
+  }
+  render()
+  {
+    return(
+      <div>
+        <h2>count:{this.state.count}</h2>
+        <button onClick={this.increase} >Add</button>
+      </div>
+    );
+  }
+}
 ReactDOM.render(<Application />,document.getElementById('root'));
+ReactDOM.render(<Increment />,document.getElementById('root1'));
 ReactDOM.render(
   <React.StrictMode>
     <App />
