@@ -28,8 +28,32 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Header = function (_React$Component) {
-  _inherits(Header, _React$Component);
+var Application = function (_React$Component) {
+  _inherits(Application, _React$Component);
+
+  function Application() {
+    _classCallCheck(this, Application);
+
+    return _possibleConstructorReturn(this, (Application.__proto__ || Object.getPrototypeOf(Application)).apply(this, arguments));
+  }
+
+  _createClass(Application, [{
+    key: 'render',
+    value: function render() {
+      var value = "Details here!!";
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(Header, { msg: value })
+      );
+    }
+  }]);
+
+  return Application;
+}(_react2.default.Component);
+
+var Header = function (_React$Component2) {
+  _inherits(Header, _React$Component2);
 
   function Header() {
     _classCallCheck(this, Header);
@@ -47,35 +71,17 @@ var Header = function (_React$Component) {
           'h1',
           null,
           'WELCOME TO ALL!!!!'
+        ),
+        _react2.default.createElement(
+          'h2',
+          null,
+          this.props.msg
         )
       );
     }
   }]);
 
   return Header;
-}(_react2.default.Component);
-
-var Application = function (_React$Component2) {
-  _inherits(Application, _React$Component2);
-
-  function Application() {
-    _classCallCheck(this, Application);
-
-    return _possibleConstructorReturn(this, (Application.__proto__ || Object.getPrototypeOf(Application)).apply(this, arguments));
-  }
-
-  _createClass(Application, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(Header, null)
-      );
-    }
-  }]);
-
-  return Application;
 }(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(Application, null), document.getElementById('root'));

@@ -3,7 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+class Application extends React.Component
+{
+  
+  render()
+  {
+    const value="Details here!!";
+    return(
+    <div>
+      <Header msg={value}/>
+    </div>
+    );
+  }
+}
 class Header extends React.Component
 {
   render()
@@ -11,21 +23,12 @@ class Header extends React.Component
     return(
     <div>
       <h1>WELCOME TO ALL!!!!</h1>
+      <h2>{this.props.msg}</h2>
     </div>
     );
   }
 }
-class Application extends React.Component
-{
-  render()
-  {
-    return(
-    <div>
-      <Header />
-    </div>
-    );
-  }
-}
+
 
 ReactDOM.render(<Application />,document.getElementById('root'));
 ReactDOM.render(

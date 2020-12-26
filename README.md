@@ -74,3 +74,5 @@ React Components
     Es6 classes
     Es6 classes2
     React components
+    Nested Components
+    Props
