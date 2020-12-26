@@ -1,6 +1,18 @@
 import { useState } from "react";
+class College
+{
+  constructor(depart)
+  {
+   this.depart=depart;
+  }
+  getCollege()
+  {
+    return "MY department is"+this.depart;
+  }
+}
 
 function App() {
+    const Clg =new College("ECE");
   
     const [Toggle,ABCD] = useState(true);
 
@@ -20,6 +32,7 @@ function App() {
       <div className="content">
         {displayContent}
       </div>
+      {  Clg.getCollege()}
     </div>
   );
     }
