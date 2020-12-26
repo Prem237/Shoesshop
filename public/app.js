@@ -43,7 +43,11 @@ var Header = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        'See the details'
+        _react2.default.createElement(
+          'h1',
+          null,
+          'WELCOME TO ALL!!!!'
+        )
       );
     }
   }]);
@@ -51,17 +55,30 @@ var Header = function (_React$Component) {
   return Header;
 }(_react2.default.Component);
 
-var code = _react2.default.createElement(
-  'div',
-  null,
-  _react2.default.createElement(
-    'h1',
-    null,
-    'Welcome To All!!!!!!!!!'
-  ),
-  _react2.default.createElement(Header, null)
-);
-_reactDom2.default.render(code, document.getElementById('root'));
+var Application = function (_React$Component2) {
+  _inherits(Application, _React$Component2);
+
+  function Application() {
+    _classCallCheck(this, Application);
+
+    return _possibleConstructorReturn(this, (Application.__proto__ || Object.getPrototypeOf(Application)).apply(this, arguments));
+  }
+
+  _createClass(Application, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(Header, null)
+      );
+    }
+  }]);
+
+  return Application;
+}(_react2.default.Component);
+
+_reactDom2.default.render(_react2.default.createElement(Application, null), document.getElementById('root'));
 _reactDom2.default.render(_react2.default.createElement(
   _react2.default.StrictMode,
   null,

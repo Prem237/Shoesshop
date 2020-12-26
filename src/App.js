@@ -7,7 +7,7 @@ class College
   }
   getCollege()
   {
-    return "MY department is:"+this.depart;
+    return "MY department is: "+this.depart;
   }
 }
 class CollegeName extends College 

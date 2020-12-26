@@ -72,3 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Hello react
 React Components
     Es6 classes
+    Es6 classes2
+    React components

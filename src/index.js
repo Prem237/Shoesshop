@@ -10,18 +10,24 @@ class Header extends React.Component
   {
     return(
     <div>
-      See the details
+      <h1>WELCOME TO ALL!!!!</h1>
     </div>
     );
   }
 }
-const code=(
-  <div>
-   <h1>Welcome To All!!!!!!!!!</h1>
-    <Header />
-  </div>
-);
-ReactDOM.render(code,document.getElementById('root'));
+class Application extends React.Component
+{
+  render()
+  {
+    return(
+    <div>
+      <Header />
+    </div>
+    );
+  }
+}
+
+ReactDOM.render(<Application />,document.getElementById('root'));
 ReactDOM.render(
   <React.StrictMode>
     <App />
