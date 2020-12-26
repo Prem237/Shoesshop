@@ -76,3 +76,4 @@ React Components
     React components
     Nested Components
     Props
+    Events

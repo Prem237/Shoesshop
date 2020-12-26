@@ -12,6 +12,7 @@ class Application extends React.Component
     return(
     <div>
       <Header msg={value}/>
+      <Neww />
     </div>
     );
   }
@@ -24,6 +25,29 @@ class Header extends React.Component
     <div>
       <h1>WELCOME TO ALL!!!!</h1>
       <h2>{this.props.msg}</h2>
+    </div>
+    );
+  }
+}
+class Neww extends React.Component
+{
+  page(e)
+  {
+    e.preventDefault();
+    const click=e.target.elements.click.value;
+    if(click)
+    {
+      alert(click);
+    }
+  }
+  render()
+  {
+    return(
+    <div>
+      <form onSubmit={this.page}>
+        <input type="text" name="click" ></input>
+        <button>add option</button> 
+      </form>
     </div>
     );
   }
