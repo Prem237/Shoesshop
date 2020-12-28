@@ -78,3 +78,6 @@ React Components
     Props
     Events
     indecision
+    Stateless function
+    Default prop
+    React dev tool

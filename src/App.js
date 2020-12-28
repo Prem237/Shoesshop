@@ -3,7 +3,7 @@ class College
 {
   constructor(depart)
   {
-   this.depart=depart;
+   this.depart=depart;  
   }
   getCollege()
   {

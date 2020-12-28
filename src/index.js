@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 class Application extends React.Component
 {
   
   render()
   {
-    const value="Details here!!";
+     const value="Hello!!";
     return(
     <div>
-      <Header msg={value}/>
+      <Header val={value}/>
       <Neww />
     </div>
     );
@@ -25,9 +26,13 @@ class Header extends React.Component
     <div>
       <h1>WELCOME TO ALL!!!!</h1>
       <h2>{this.props.msg}</h2>
+      <h2>{this.props.val}</h2>
     </div>
     );
   }
+}
+Header.defaultProps={
+  msg:"Details Here!!!"
 }
 class Neww extends React.Component
 {
